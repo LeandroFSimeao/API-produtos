@@ -5,6 +5,7 @@ const express = require('express')
 // Inicializa um objeto de aplicação Express
 
 const app = express()
+const port = process.env.PORT || 3000;
 
 const lista_produtos = {
     produtos: [
@@ -102,7 +103,7 @@ app.delete('/produtos/:id', function (req, res) {
 
 // Inicializa o servidor HTTP na porta 3000
 
-app.listen(3000, function () {
+app.listen(port, function () {
 
     console.log('Servidor rodando na porta 3000')
 
