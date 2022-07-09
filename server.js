@@ -29,7 +29,7 @@ app.get('*', function(req, res, next){
 
 app.get('/', function (req, res) {
 
-    res.send('Hello World')
+    res.send('Seja bem vindo à aplicação')
 
 })
 
